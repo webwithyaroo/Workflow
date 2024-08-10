@@ -10,7 +10,6 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-bg": "url('/images/image 1.png')",
         "bint-bg":
           "linear-gradient(222deg, rgba(217, 217, 217, 0.13)22.09%, rgba(115, 115, 115, 0.16)100%)",
       },

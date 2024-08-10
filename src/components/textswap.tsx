@@ -16,7 +16,7 @@ export const Textswap = ({ text, className }: TextProps) => {
     animate(
       scope.current.querySelectorAll(".letterchar"),
       { y: -64 },
-      { duration: 0.2, delay: stagger(0.07) }
+      { duration: 0.2, delay: stagger(0.02) }
     );
   };
 
@@ -24,7 +24,7 @@ export const Textswap = ({ text, className }: TextProps) => {
     animate(
       scope.current.querySelectorAll(".letterchar"),
       { y: 0 },
-      { duration: 0.2, delay: stagger(0.07) }
+      { duration: 0.2, delay: stagger(0.02) }
     );
   };
 
@@ -46,13 +46,14 @@ export const Textswap = ({ text, className }: TextProps) => {
               data-letter={letter}
               className="letterchar inline-block relative  h-20"
               initial={{ y: 0 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.2 }}
             >
               {letter}
               <motion.span
                 className="absolute top-full left-0 scale-50  cursor-pointer text-primary-100 "
-                initial={{ opacity: 1 }}
+                initial={{ opacity: 0.2 }}
                 whileHover={{
+                  opacity: 1,
                   translateY: -20,
                   rotateZ: 40,
                   transition: {
@@ -62,7 +63,7 @@ export const Textswap = ({ text, className }: TextProps) => {
                     duration: 1,
                   },
                 }}
-                transition={{ opacity: { duration: 0.3 } }}
+                transition={{ opacity: { duration: 0.2 } }}
               >
                 {letter}
               </motion.span>

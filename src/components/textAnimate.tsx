@@ -13,7 +13,7 @@ export const TextAnimation = ({ text }: TextProps) => {
     animate(
       scope.current.querySelectorAll(".letterchar"),
       { y: -32 },
-      { duration: 0.2, delay: stagger(0.07) }
+      { duration: 0.1, delay: stagger(0.02) }
     );
   };
 
@@ -21,7 +21,7 @@ export const TextAnimation = ({ text }: TextProps) => {
     animate(
       scope.current.querySelectorAll(".letterchar"),
       { y: 0 },
-      { duration: 0.2, delay: stagger(0.07) }
+      { duration: 0.1, delay: stagger(0.02) }
     );
   };
 
@@ -43,7 +43,7 @@ export const TextAnimation = ({ text }: TextProps) => {
               data-letter={letter}
               className="letterchar flex items-center justify-cente  relative  h-8"
               initial={{ y: 0 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.2 }}
             >
               {letter}
               <span className="absolute top-full left-0 cursor-pointer text-white ">

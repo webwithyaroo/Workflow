@@ -19,7 +19,7 @@ export const FeatureSection = () => {
   };
 
   return (
-    <section className="bg-primary-300 pt-40 relative">
+    <section className="bg-primary-300 pt-40 pb-10 relative">
       <img
         src="images/customArrow.svg"
         alt="Arrow decoration"
@@ -68,7 +68,7 @@ export const FeatureSection = () => {
             <Textswap text={"COMPONENTS"} />
             <FaArrowRightLong
               className={` ${
-                clicked === 1
+                clicked === 2
                   ? "hidden"
                   : " text-primary-250 cursor-pointer duration-500 group-hover:-rotate-2 -rotate-45 group-hover:translate-x-[200%] "
               }`}
@@ -102,7 +102,7 @@ export const FeatureSection = () => {
             <Textswap text={"VERSION CONTROL"} />
             <FaArrowRightLong
               className={` ${
-                clicked === 1
+                clicked === 3
                   ? "hidden"
                   : " text-primary-250 cursor-pointer duration-500 group-hover:-rotate-2 -rotate-45 group-hover:translate-x-[200%] "
               }`}
