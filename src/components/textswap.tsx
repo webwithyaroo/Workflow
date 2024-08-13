@@ -15,7 +15,7 @@ export const Textswap = ({ text, className }: TextProps) => {
   const handleHover = () => {
     animate(
       scope.current.querySelectorAll(".letterchar"),
-      { y: -64 },
+      { y: -80 },
       { duration: 0.2, delay: stagger(0.02) }
     );
   };
@@ -50,9 +50,11 @@ export const Textswap = ({ text, className }: TextProps) => {
             >
               {letter}
               <motion.span
-                className="absolute top-full left-0 scale-50  cursor-pointer text-primary-100 "
-                initial={{ opacity: 0.2 }}
+                className="absolute top-full left-0 cursor-pointer text-primary-150 "
+                initial={{ opacity: 0.5, scale: 1 }}
                 whileHover={{
+                  scale: 0.5,
+
                   opacity: 1,
                   translateY: -20,
                   rotateZ: 40,

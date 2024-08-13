@@ -1,10 +1,11 @@
-import { UserButton, UserProfile } from "@clerk/nextjs";
-
+import { UserProfile } from "@clerk/nextjs";
+import { SideBar, Main } from "./index";
 const Page = () => {
   return (
-    <div>
-      <UserButton />
-    </div>
+    <section className="bg-black h-screen flex">
+      <SideBar />
+      <Main />
+    </section>
   );
 };
 

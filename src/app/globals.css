@@ -1,7 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
 
+/* Ensure body and html cover the full viewport height */
+html,
+body {
+  height: 100%;
+}
 .buttonBorder {
   border: 1px solid rgba(255, 255, 255, 0.43);
 }
@@ -22,6 +33,30 @@ img {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  grid-template-areas:
+    "grid1 grid2 grid2 grid2"
+    "grid1 grid2 grid2 grid2"
+    "grid3 grid3 grid3 grid4"
+    "grid3 grid3 grid3 grid4";
+  gap: 1rem; /* Optional: adds space between grid items */
+}
+
+/* Example item styles */
+.grid2 {
+  grid-area: grid2;
+}
+.grid1 {
+  grid-area: grid1;
+}
+.grid4 {
+  grid-area: grid4;
+}
+.grid3 {
+  grid-area: grid3;
+}
 /* //Text animate */
 
 @keyframes gradientAnimation {

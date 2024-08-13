@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import { Footer, Header } from "../layout";
+import { Header } from "../layout";
 import { ClerkProvider } from "@clerk/nextjs";
 
 const pop = Montserrat({
@@ -25,7 +25,6 @@ export default function RootLayout({
         <body className={`${pop.className}  text-body`}>
           <Header />
           {children}
-          <Footer />
         </body>
       </ClerkProvider>
     </html>

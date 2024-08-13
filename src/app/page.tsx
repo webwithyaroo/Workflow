@@ -1,3 +1,4 @@
+import { Footer } from "../layout";
 import { Hero, BintalSection, FeatureSection } from "../page";
 
 const Page = () => {
@@ -6,6 +7,7 @@ const Page = () => {
       <Hero />
       <BintalSection />
       <FeatureSection />
+      <Footer />
     </>
   );
 };

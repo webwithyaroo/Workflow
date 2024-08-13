@@ -12,7 +12,7 @@ const fadeVariants = {
 };
 
 export const FeatureSection = () => {
-  const [clicked, setIsClicked] = useState<boolean | number>(1);
+  const [clicked, setIsClicked] = useState<boolean | number>();
 
   const handleClicked = (target: number) => {
     setIsClicked((el) => (el === target ? false : target));
@@ -28,7 +28,7 @@ export const FeatureSection = () => {
       <div className="lg:text-7xl font-bold heroText text-white text-start px-8">
         <div className="pt-10 max-sm:pt-5 border-b-2 border-primary-200 relative">
           <div
-            className="flex justify-between group  cursor-pointer "
+            className="flex justify-between group  cursor-pointer text-primary-150  "
             onClick={() => handleClicked(1)}
           >
             <Textswap text={"DASHBOARD"} />
@@ -96,7 +96,7 @@ export const FeatureSection = () => {
         </div>
         <div className="pt-10 max-sm:pt-5 border-b-2 border-primary-200 relative ">
           <div
-            className="flex justify-between cursor-pointer group"
+            className="flex justify-between cursor-pointer overflow-hidden group"
             onClick={() => handleClicked(3)}
           >
             <Textswap text={"VERSION CONTROL"} />

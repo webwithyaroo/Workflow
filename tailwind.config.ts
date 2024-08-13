@@ -12,14 +12,17 @@ const config: Config = {
       backgroundImage: {
         "bint-bg":
           "linear-gradient(222deg, rgba(217, 217, 217, 0.13)22.09%, rgba(115, 115, 115, 0.16)100%)",
+
+        "dotted-black": "url('/images/dotted_black_background.jpg')",
       },
       colors: {
         primary: {
-          100: "#4046D5",
-          200: "rgba(217, 217, 217, 0.05)",
           20: "rgba(26, 25, 25, 0.007)",
+          100: "#34233E",
+          150: "#653185",
+          200: "rgba(217, 217, 217, 0.05)",
           250: "#707070",
-          300: "#0E0F11",
+          300: "#1C1C1C",
         },
       },
       container: {
